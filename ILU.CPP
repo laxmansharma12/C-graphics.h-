@@ -1,0 +1,47 @@
+#include<iostream.h>
+#include<graphics.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+ clrscr();
+ int gd=DETECT,gm;
+ initgraph(&gd,&gm,"c:\\TURBOC3\\BGI");
+for(int i=0;i<650;i++)
+ {
+ arc(200+i,300,0,180,40);
+ arc(280+i,300,0,180,40);
+ line(160+i,300,235+i,400);
+ line(235+i,400,320+i,300);
+ line(180+i,370,330+i,320);
+ line(320+i,315,330+i,320);
+ line(325+i,330,330+i,320);
+ line(185+i,360,195+i,365);
+ line(170+i,365,180+i,370);
+ line(170+i,365,185+i,360);
+ line(190+i,375,195+i,365);
+ line(177+i,379,180+i,370);
+ line(177+i,379,190+i,374);
+ line(20+i,50,60+i,50);
+ line(40+i,50,40+i,100);
+ line(20+i,100,60+i,100);
+ line(100+i,110,100+i,150);
+ line(100+i,150,130+i,150);
+ circle(160+i,127,22);
+ line(185+i,110,215+i,150);
+ line(215+i,150,240+i,110);
+ line(250+i,110,250+i,150);
+ line(250+i,110,280+i,110);
+ line(250+i,130,280+i,130);
+ line(250+i,150,280+i,150);
+ line(350+i,155,320+i,205);
+ line(310+i,155,330+i,185);
+circle(380+i,180,22);
+ line(410+i,155,410+i,185);
+ arc(430+i,185,180,360,20);
+ line(450+i,155,450+i,185);
+   delay(30);
+   cleardevice();
+   }
+ getch();
+}
