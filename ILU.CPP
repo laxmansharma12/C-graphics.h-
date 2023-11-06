@@ -42,6 +42,5 @@ circle(380+i,180,22);
  line(450+i,155,450+i,185);
    delay(30);
    cleardevice();
-   }
- getch();
+}
 }
